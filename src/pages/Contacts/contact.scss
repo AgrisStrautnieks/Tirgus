@@ -1,0 +1,26 @@
+.form_border {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+.form_width {
+  width: 300px;
+}
+.form_width input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  margin: 55px 0;
+  width: 100%;
+  padding: 0 0 5px 0;
+  background: none;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+}

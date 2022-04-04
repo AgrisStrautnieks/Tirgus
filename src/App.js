@@ -1,15 +1,17 @@
 import Layout from "./components/Layout";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import Products from "./pages/Products";
-import Contacts from "./pages/Contacts";
-import PageCTA from "./pages/PageCTA";
+import Products from "./pages/Products/Products";
+import Contacts from "./pages/Contacts/Contacts";
 
 function App() {
+  const location = useLocation();
+
   return (
     <Layout>
-      <Switch>
+      <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <Home />
         </Route>
@@ -21,9 +23,6 @@ function App() {
         </Route>
         <Route path="/Contacts">
           <Contacts />
-        </Route>
-        <Route path="/page-cta">
-          <PageCTA />
         </Route>
       </Switch>
     </Layout>

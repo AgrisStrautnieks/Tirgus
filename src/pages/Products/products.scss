@@ -1,0 +1,36 @@
+.product {
+  width: 100vw;
+  height: 100%;
+  background-image: url(../../assets/forest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 20%;
+}
+
+.product-title {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.item {
+  min-height: 15rem;
+  min-width: 25rem;
+  padding: 40px;
+  pointer-events: none;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.inner-carousel {
+  display: flex;
+}
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
